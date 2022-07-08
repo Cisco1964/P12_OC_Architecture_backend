@@ -1,0 +1,35 @@
+# Développez une architecture back-end sécurisée en utilisant Django ORM
+
+Ce CRM développé en interne permet aux utilisateurs de Epicevents de créer et mettre à jour une base de données clients, contrats et des évènements liés à ceux-ci.
+
+Une base de donnée sécurisée est mise en œuvre avec Django ORM et PostgreSQL.
+
+
+# Pré-requis
+
+Création d'un environnement virtuel ENV  
+* python -m venv ENV
+* activation de l'environnement virtuel : source ENV/bin/activate  
+* installation des packages : voir le fichier requirements.txt
+
+# Installation de l'application en local
+
+Commandes à saisir pour l'installation :
+
+Sur Windows/Linux/Mac :
+
+```
+$ git clone https://github.com/Cisco1964/P12_OC_Architecture_backend.git
+$ cd projet_epic
+$ pip install -r requirements.txt
+$ python manage.py makemigrations
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+
+
+
+# Utilisation de Postman pour comprendre et utiliser l'API
+
+Lien Postman  https://documenter.getpostman.com/view/18296799/UzJMsFfs
