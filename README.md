@@ -2,13 +2,13 @@
 
 Ce CRM développé en interne permet aux utilisateurs de Epicevents de créer et mettre à jour une base de données clients, contrats et des évènements liés à ceux-ci.
 
-Une base de donnée sécurisée est mise en œuvre avec Django ORM et PostgreSQL.
+Une base de donnée sécurisée est mise en œuvre avec Django ORM et PostgreSQL, la base de données PostgresSQL (nom : epiceventsDB) doit être créer avant de lancer le projet, pour l'accès a cette base, voir le fichier settings.py.
 
 
 # Pré-requis
 
 Création d'un environnement virtuel ENV  
-* python -m venv ENV
+* python3 -m venv ENV
 * activation de l'environnement virtuel : source ENV/bin/activate  
 * installation des packages : voir le fichier requirements.txt
 
