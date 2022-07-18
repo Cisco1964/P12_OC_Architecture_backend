@@ -38,8 +38,10 @@ Lien Postman  https://documenter.getpostman.com/view/18296799/UzJMsFfs
 # Notes
 
 La commande DUMPDATA a été utilisée pour extraire les données de la BDD :
-'''
+
+```
 $ python manage.py dumpdata authenticate.User crm.Clients crm.Contrats crm.Events --indent 2 >  database.json
-'''
+```
+
 
 
