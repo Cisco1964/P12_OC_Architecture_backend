@@ -1,0 +1,321 @@
+[
+{
+  "model": "authenticate.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$Y11S6LG04qhV8ixi5uiRot$W+sf8xipIOweXNRXkrzrqodJYjzzbcO8VvuS0Rg20E0=",
+    "last_login": "2022-06-30T08:38:03.558Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "toto@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-06-08T11:36:30.524Z",
+    "role": "gestion",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authenticate.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$IzbqT9jWegYhMvncvgGwbM$7mqVvA5YIIAIbNAIRYQVDdd9QC3gify0ITMGVZA/jP4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "kevin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-08T12:44:47Z",
+    "role": "vente",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authenticate.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$g2hzngwT1v6AasgcsHlBtF$9siqF7MqNnfrAmww8i2qad+PUjtzsKtPyWJ5rnJlV8U=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "francis",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-08T16:03:15.856Z",
+    "role": "support",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authenticate.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$VkMbsrkfzMtjxJNOBhot5z$CY6gpmNacak61kqG6RQNzJmNjP4/1ifYbmDAJpAXxFc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "celine",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-08T17:39:53Z",
+    "role": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authenticate.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$2yPxWxMiUg0LkqDhTg0dW4$5rUbzOQ1MyuBoxbxP5/IyFozAyN+TfLNo+zkfzoSd/A=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bob",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-09T06:05:46Z",
+    "role": "support",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authenticate.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$JAcJJhLRDIqGOcFlsptGQo$qzph2iBYRjmr6/1nhPXlDg0fAvkxyTwj73rbEV2fjAw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "joe",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-30T08:55:20Z",
+    "role": "support",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "crm.clients",
+  "pk": 1,
+  "fields": {
+    "firstname": "Roger",
+    "lastname": "Bernard",
+    "email": "toto@gmail.com",
+    "phone": "0966117231, press 33",
+    "mobile": "0966117231, press 33",
+    "companyname": "Roger&Bernard cie",
+    "datecreated": "2022-06-13T08:52:25.076Z",
+    "dateupdated": "2022-06-13T08:52:25.076Z",
+    "salescontact": 2,
+    "clientstatus": true
+  }
+},
+{
+  "model": "crm.clients",
+  "pk": 2,
+  "fields": {
+    "firstname": "Michel",
+    "lastname": "Bibline",
+    "email": "michel@gmail.com",
+    "phone": "0865524266, press 33",
+    "mobile": "0865524266, press 33",
+    "companyname": "Samsung ltd",
+    "datecreated": "2022-06-13T08:55:05.662Z",
+    "dateupdated": "2022-06-13T08:55:05.662Z",
+    "salescontact": 3,
+    "clientstatus": false
+  }
+},
+{
+  "model": "crm.clients",
+  "pk": 4,
+  "fields": {
+    "firstname": "Henri",
+    "lastname": "Dumont",
+    "email": "henri2@gmail.com",
+    "phone": "(742) 689-3045, press 33",
+    "mobile": "(742) 689-3045, press 33",
+    "companyname": "Paryrus en folie",
+    "datecreated": "2022-06-13T10:36:35.687Z",
+    "dateupdated": "2022-06-13T10:36:35.687Z",
+    "salescontact": 2,
+    "clientstatus": true
+  }
+},
+{
+  "model": "crm.clients",
+  "pk": 6,
+  "fields": {
+    "firstname": "Enrico",
+    "lastname": "Massias",
+    "email": "Enrico@gmail.com",
+    "phone": "(742) 689-3045, press 66",
+    "mobile": "(742) 689-3045, press 33",
+    "companyname": "C'est une dinguerie",
+    "datecreated": "2022-07-06T09:56:59.191Z",
+    "dateupdated": "2022-07-07T11:35:41.236Z",
+    "salescontact": 2,
+    "clientstatus": true
+  }
+},
+{
+  "model": "crm.clients",
+  "pk": 7,
+  "fields": {
+    "firstname": "Denis",
+    "lastname": "Potance",
+    "email": "Denis@gmail.com",
+    "phone": "(742) 689-3045, press 66",
+    "mobile": "(742) 689-3045, press 33",
+    "companyname": "C'est pas ca",
+    "datecreated": "2022-07-07T05:51:03.951Z",
+    "dateupdated": "2022-07-07T05:51:03.951Z",
+    "salescontact": null,
+    "clientstatus": false
+  }
+},
+{
+  "model": "crm.contrats",
+  "pk": 1,
+  "fields": {
+    "salescontact": 2,
+    "client": 1,
+    "datecreated": "2022-06-13T08:52:55.054Z",
+    "dateupdated": "2022-06-13T08:52:55.054Z",
+    "contratstatus": true,
+    "amount": 21.0,
+    "paymentdue": "2022-06-13T08:52:55.054Z"
+  }
+},
+{
+  "model": "crm.contrats",
+  "pk": 2,
+  "fields": {
+    "salescontact": 2,
+    "client": 1,
+    "datecreated": "2022-06-13T08:56:50.872Z",
+    "dateupdated": "2022-06-13T08:56:50.872Z",
+    "contratstatus": true,
+    "amount": 41.0,
+    "paymentdue": "2022-06-13T08:56:50.872Z"
+  }
+},
+{
+  "model": "crm.contrats",
+  "pk": 3,
+  "fields": {
+    "salescontact": 2,
+    "client": 1,
+    "datecreated": "2022-06-13T08:57:16.739Z",
+    "dateupdated": "2022-06-13T08:57:16.739Z",
+    "contratstatus": true,
+    "amount": 0.0,
+    "paymentdue": "2022-06-13T08:57:16.739Z"
+  }
+},
+{
+  "model": "crm.contrats",
+  "pk": 4,
+  "fields": {
+    "salescontact": 2,
+    "client": 4,
+    "datecreated": "2022-06-16T07:41:49.746Z",
+    "dateupdated": "2022-07-07T06:07:16.452Z",
+    "contratstatus": true,
+    "amount": 25.0,
+    "paymentdue": "2022-07-07T06:07:16.453Z"
+  }
+},
+{
+  "model": "crm.contrats",
+  "pk": 9,
+  "fields": {
+    "salescontact": 2,
+    "client": 6,
+    "datecreated": "2022-07-07T12:04:25.464Z",
+    "dateupdated": "2022-07-07T16:49:02.079Z",
+    "contratstatus": true,
+    "amount": 25.0,
+    "paymentdue": "2022-07-07T16:49:02.079Z"
+  }
+},
+{
+  "model": "crm.events",
+  "pk": 3,
+  "fields": {
+    "client": 1,
+    "contrat": 1,
+    "datecreated": "2022-06-16T07:37:05.633Z",
+    "dateupdated": "2022-06-16T07:37:05.633Z",
+    "supportcontact": 5,
+    "eventstatus": true,
+    "attendees": 14,
+    "eventdate": "2022-06-16T07:37:05.633Z",
+    "notes": "Test"
+  }
+},
+{
+  "model": "crm.events",
+  "pk": 4,
+  "fields": {
+    "client": 1,
+    "contrat": 2,
+    "datecreated": "2022-06-16T07:40:55.214Z",
+    "dateupdated": "2022-06-16T07:40:55.214Z",
+    "supportcontact": 5,
+    "eventstatus": false,
+    "attendees": 5,
+    "eventdate": "2022-06-16T07:40:55.214Z",
+    "notes": "Test"
+  }
+},
+{
+  "model": "crm.events",
+  "pk": 5,
+  "fields": {
+    "client": 4,
+    "contrat": 4,
+    "datecreated": "2022-06-16T07:42:30.707Z",
+    "dateupdated": "2022-07-07T16:54:13.426Z",
+    "supportcontact": 5,
+    "eventstatus": false,
+    "attendees": 8888,
+    "eventdate": "2022-07-07T16:54:13.426Z",
+    "notes": "Tout est très bon"
+  }
+},
+{
+  "model": "crm.events",
+  "pk": 16,
+  "fields": {
+    "client": 6,
+    "contrat": 9,
+    "datecreated": "2022-07-07T16:53:03.012Z",
+    "dateupdated": "2022-07-07T17:00:06.060Z",
+    "supportcontact": 5,
+    "eventstatus": true,
+    "attendees": 8888,
+    "eventdate": "2022-07-07T17:00:06.060Z",
+    "notes": "Tout est très très bon"
+  }
+}
+]
