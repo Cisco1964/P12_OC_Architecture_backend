@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-#from authenticate.views import login
 from crm.views import CrudClientViewSet, CrudContratViewSet, CrudEventViewSet
 from rest_framework_extensions.routers import ExtendedDefaultRouter
 
