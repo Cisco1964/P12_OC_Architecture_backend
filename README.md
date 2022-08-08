@@ -29,7 +29,6 @@ $ python manage.py runserver
 
 
 
-
 # Utilisation de Postman pour comprendre et utiliser l'API
 
 Lien Postman  https://documenter.getpostman.com/view/18296799/UzJMsFfs
