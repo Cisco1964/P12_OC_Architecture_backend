@@ -3,11 +3,12 @@ from rest_framework.exceptions import PermissionDenied
 
 
 class ClientsPermissions(permissions.BasePermission):
-    """ 
+    """
     Equipe gestion : tous les droits (CRUD)
     Equipe vente   : accès en lecture seule à tous les clients
                      droit de modification pour passer un prospect en client
-                     droit de modification/d'accès pour tous les clients dont ils sont responsables
+                     droit de modification/d'accès pour tous les clients /
+                     dont ils sont responsables
     Equipe support : accès en lecture seule à tous les clients
     """
 
@@ -57,9 +58,11 @@ class EventsPermissions(permissions.BasePermission):
     """
     Equipe gestion : tous les droits (CRUD)
     Equipe vente   : accès en lecture seule à tous les évenements
-                     droit de modification/d'accès pour tous les évènements dont ils sont responsables
+                     droit de modification/d'accès pour tous les évènements
+                     dont ils sont responsables
     Equipe support : accès en lecture seule à tous les évènements
-                     droit de modification/d'accès pour tous les évènements dont ils sont responsables
+                     droit de modification/d'accès pour tous les évènements
+                     dont ils sont responsables
     """
 
     def has_permission(self, request, view):
