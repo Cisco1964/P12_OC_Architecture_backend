@@ -8,7 +8,7 @@ class ClientsPermissions(permissions.BasePermission):
     Equipe vente   : accès en lecture seule à tous les clients
                      droit de modification pour passer un prospect en client
                      droit de modification/d'accès pour tous les clients dont ils sont responsables
-    Equipe support : accès en lecture seule à tous les clients              
+    Equipe support : accès en lecture seule à tous les clients
     """
 
     def has_permission(self, request, view):

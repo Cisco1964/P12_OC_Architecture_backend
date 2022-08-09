@@ -32,7 +32,7 @@ class CrudClientViewSet(ModelViewSet):
 		instance = self.get_object()
 		serializer = self.serializer_class(instance, data=request.data, partial=True)
 		serializer.is_valid(raise_exception=True)
-		# MAJ de salescontact 
+		# MAJ de salescontact
 		serializer.validated_data['salescontact'] = self.request.user
 		serializer.save()
 		return Response(serializer.data)
@@ -50,23 +50,23 @@ class CrudContratViewSet(ModelViewSet):
 		user = User.objects.get(username=self.request.user)
 		if user.role == "support":
 			data = self.queryset.filter(client=self.kwargs['parent_lookup_contrat']).filter(
-												event__supportcontact=user.id)
+										event__supportcontact=user.id)
 			if data is None:
 				raise PermissionDenied("Accès à ce contrat non permis")
 			return data
 		elif user.role == "vente":
 			data = self.queryset.filter(client=self.kwargs['parent_lookup_contrat']).filter(
-			 									salescontact=user.id)
+			 							salescontact=user.id)
 			if data is None:
 				raise PermissionDenied("Accès à ce contrat non permis")
 			return data
 		return self.queryset
-		
+
 	def partial_update(self, request, *args, **kwargs):
 		instance = self.get_object()
 		serializer = self.serializer_class(instance, data=request.data, partial=True)
 		serializer.is_valid(raise_exception=True)
-		# MAJ de salescontact 
+		# MAJ de salescontact
 		serializer.validated_data['salescontact'] = self.request.user
 		serializer.save()
 		return Response(serializer.data)
@@ -79,7 +79,7 @@ class CrudContratViewSet(ModelViewSet):
 		serializer.validated_data['contratstatus'] = False
 		serializer.save(client=instance_client)
 		return Response(serializer.data)
-				
+
 
 class CrudEventViewSet(ModelViewSet):
 	serializer_class = EventsSerializer
@@ -93,20 +93,20 @@ class CrudEventViewSet(ModelViewSet):
 		user = User.objects.get(username=self.request.user)
 		if user.role == "support":
 			data = self.queryset.filter(client=self.kwargs['parent_lookup_contrat__event']).filter(
-												contrat=self.kwargs['parent_lookup_event']).filter(
-												supportcontact=user.id)
+										contrat=self.kwargs['parent_lookup_event']).filter(
+										supportcontact=user.id)
 			if data is None:
 				raise PermissionDenied("Accès à cet évènement non permis")
 			return data
 		elif user.role == "vente":
 			data = self.queryset.filter(client=self.kwargs['parent_lookup_contrat__event']).filter(
-												contrat=self.kwargs['parent_lookup_event']).filter(
-												contrat__salescontact=user.id)											
+										contrat=self.kwargs['parent_lookup_event']).filter(
+										contrat__salescontact=user.id)
 			if data is None:
 				raise PermissionDenied("Accès à cet évènement non permis")
 			return data
 		return self.queryset
-									
+
 	def partial_update(self, request, *args, **kwargs):
 		instance = self.get_object()
 		serializer = self.serializer_class(instance, data=request.data, partial=True)
