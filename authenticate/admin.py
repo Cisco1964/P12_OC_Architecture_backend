@@ -32,4 +32,5 @@ class CustomUserAdmin(UserAdmin):
         except User.DoesNotExist:
                 return []
 
+
 admin.site.register(User, CustomUserAdmin)
