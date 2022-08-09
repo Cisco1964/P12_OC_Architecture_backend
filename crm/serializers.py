@@ -39,10 +39,10 @@ class EventsSerializer(serializers.ModelSerializer):
 		fields = '__all__'
 
 		extra_kwargs = {
-			"client": {'read_only': True},
-			"contrat": {'read_only': True},
-			"id": {'read_only': True},
-			"datecreated": {'read_only': True},
-			"dateupdated": {'read_only': True},
-			"eventdate": {'read_only': True},
+						"client": {'read_only': True},
+						"contrat": {'read_only': True},
+						"id": {'read_only': True},
+						"datecreated": {'read_only': True},
+						"dateupdated": {'read_only': True},
+						"eventdate": {'read_only': True},
 		}
