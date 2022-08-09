@@ -33,7 +33,7 @@ $ python manage.py runserver
 
 Lien Postman  https://documenter.getpostman.com/view/18296799/UzJMsFfs
 
-Extraction collection Postman : Evepicevents.postman_collection.json
+Extraction collection Postman : Epicevents.postman_collection.json
 
 # Notes
 
