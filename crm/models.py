@@ -25,6 +25,9 @@ class Clients(models.Model):
             statut = "Client"
         return f"{self.id}, {self.companyname}, ({statut})"
 
+    class Meta:
+        verbose_name_plural = "Clients"
+
 
 class Contrats(models.Model):
 
@@ -45,6 +48,9 @@ class Contrats(models.Model):
         if self.contratstatus is True:
             statut = "signé"
         return f"{self.id}, ({statut})"
+
+    class Meta:
+        verbose_name_plural = "Contrats"
 
 
 class Events(models.Model):
@@ -70,3 +76,6 @@ class Events(models.Model):
             statut = "Terminé"
 
         return f"{self.supportcontact}, {self.contrat}, ({statut})"
+
+    class Meta:
+        verbose_name_plural = "Events"
