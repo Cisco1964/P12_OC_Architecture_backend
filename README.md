@@ -42,7 +42,7 @@ Extraction collection Postman : Epicevents.postman_collection.json
 La commande DUMPDATA a été utilisée pour extraire les données de la BDD :
 
 ```
-$ python manage.py dumpdata authenticate.User crm.Clients crm.Contrats crm.Events --indent 2 >  database.json
+$ python manage.py dumpdata authenticate.User crm.Clients crm.Contrats crm.Events --indent 2 >  crm/fixtures/database.json
 ```
 
 Pour charger la bdd utiliser la commande :
