@@ -4,7 +4,7 @@ Ce CRM développé en interne permet aux utilisateurs de Epicevents de créer et
 
 Une base de donnée sécurisée est mise en œuvre avec Django ORM et PostgreSQL, la base de données PostgresSQL (nom : epiceventsdb) doit être créée avant de lancer le projet, pour l'accès a cette base, voir le fichier settings.py.
 
-Code source complet du projet (Python 3.8.5, Django 4.0.5, psycopg2-binary==2.9.3)
+Code source complet du projet (Python 3.8.5, Django 4.0.5, psycopg2-binary 2.9.3)
 
 # Pré-requis
 
