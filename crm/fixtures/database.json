@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$320000$Y11S6LG04qhV8ixi5uiRot$W+sf8xipIOweXNRXkrzrqodJYjzzbcO8VvuS0Rg20E0=",
-    "last_login": "2022-06-30T08:38:03.558Z",
+    "last_login": "2022-08-09T10:59:55.380Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -22,7 +22,7 @@
   "model": "authenticate.user",
   "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$320000$IzbqT9jWegYhMvncvgGwbM$7mqVvA5YIIAIbNAIRYQVDdd9QC3gify0ITMGVZA/jP4=",
+    "password": "pbkdf2_sha256$320000$98GNLnlMBO51w6eZmaIxUV$WUW17Jjprru/9LKnfNWG9G18f57L1BQFavkssT44i8s=",
     "last_login": null,
     "is_superuser": false,
     "username": "kevin",
@@ -39,47 +39,9 @@
 },
 {
   "model": "authenticate.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$320000$g2hzngwT1v6AasgcsHlBtF$9siqF7MqNnfrAmww8i2qad+PUjtzsKtPyWJ5rnJlV8U=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "francis",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2022-06-08T16:03:15.856Z",
-    "role": "support",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "authenticate.user",
-  "pk": 4,
-  "fields": {
-    "password": "pbkdf2_sha256$320000$VkMbsrkfzMtjxJNOBhot5z$CY6gpmNacak61kqG6RQNzJmNjP4/1ifYbmDAJpAXxFc=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "celine",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2022-06-08T17:39:53Z",
-    "role": "",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "authenticate.user",
   "pk": 5,
   "fields": {
-    "password": "pbkdf2_sha256$320000$2yPxWxMiUg0LkqDhTg0dW4$5rUbzOQ1MyuBoxbxP5/IyFozAyN+TfLNo+zkfzoSd/A=",
+    "password": "pbkdf2_sha256$320000$a67mQeCRQKycfdRRuXfKNc$xN4PolQo+GtbhElgNWBECtr7MaWkdv+So2bdL3amQhg=",
     "last_login": null,
     "is_superuser": false,
     "username": "bob",
@@ -98,7 +60,7 @@
   "model": "authenticate.user",
   "pk": 6,
   "fields": {
-    "password": "pbkdf2_sha256$320000$JAcJJhLRDIqGOcFlsptGQo$qzph2iBYRjmr6/1nhPXlDg0fAvkxyTwj73rbEV2fjAw=",
+    "password": "pbkdf2_sha256$320000$457EBzXT1X2XNQkGX9MkuD$J80d17+WazXNS8fTMv5yve011wUQxb5s69jxU1Ili9c=",
     "last_login": null,
     "is_superuser": false,
     "username": "joe",
@@ -141,7 +103,7 @@
     "companyname": "Samsung ltd",
     "datecreated": "2022-06-13T08:55:05.662Z",
     "dateupdated": "2022-06-13T08:55:05.662Z",
-    "salescontact": 3,
+    "salescontact": null,
     "clientstatus": false
   }
 },
