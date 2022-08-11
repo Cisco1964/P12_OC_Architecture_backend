@@ -23,7 +23,7 @@ Sur Windows/Linux/Mac :
 
 ```
 $ git clone https://github.com/Cisco1964/P12_OC_Architecture_backend.git
-$ cd projet_epic
+$ cd P12_OC_Architecture_backend
 $ pip install -r requirements.txt
 $ python manage.py makemigrations
 $ python manage.py migrate
