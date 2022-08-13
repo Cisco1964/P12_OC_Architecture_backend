@@ -1,958 +1,815 @@
 {
 	"info": {
 		"_postman_id": "702d2e7a-1740-492e-adb0-aa73d944e1b9",
-		"name": "Projet P12_Epicevents",
-		"description": "Le CRM permet aux utilisateurs de l'entreprise Epicevents de créer et mettre à jour une base de données clients, de créer et mettre à jour des contrats et des événements.\n\nLa documentation décrit les différents points de terminaison de cette API.\n\nL'API est accessible à n'importe quel utilisateur mais pour accéder à une ressource, l'utilisateur doit être authentifié et avoir un token de connexion, celui-ci est généré au moment de l'authentification de l'utilisateur, celui-ci dans être renseigné dans le Headers avec la clé Authorization et le mot-clé Token.\n\nLes utilisateurs des équipes de vente et de support présentent des besoins et des exigences très divers en ce qui concerne les données auxquelles ils auront besoin d'accéder pour s'acquitter de leurs tâches. Nous avons créé plusieurs profils d'utilisateur présentant les besoins des membres de chacune des équipes internes dans le système CRM.\n\nMembres de l'équipe de gestion\nLeurs objectifs :\n- Veiller à ce que l'ensemble des clients et des événements soient pris en \n  charge par une personne,\n- Ajouter de nouveaux utilisateurs au système CRM et leur attribuer des\n  autorisations.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Créer, mettre à jour et supprimer des utilisateurs dans le système CRM,\n- Afficher et modifier toutes les données dans le système CRM.\n\nMembres de l'équipe de vente\nLeurs objectifs :\n- Trouver des clients potentiels pour l'entreprise,\n- Convaincre les clients potentiels de signer avec l'entreprise un contrat \n  relatif à l'organisation d'un événement,\n- Effectuer le suivi des clients existants pour savoir s'ils ont un autre \n  événement en vue.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Ajouter de nouveaux clients dans le système CRM à mesure qu'ils obtiennent\n  des prospects,\n- Actualiser les informations du client pour garantir leur exactitude,\n- Créer un contrat pour un nouvel événement potentiel,\n- Indiquer qu'un contrat ouvert est signé,\n- Créer un nouvel événement pour un contrat.\n\nMembres de l'équipe de support\nLeurs objectifs :\n- Servir de point de contact pour le client lors d'un événement à venir,\n- Faire le lien​ avec les clients existants une fois désignés comme responsable \n  de la gestion de leur événement,\n- Actualiser les informations au fur et à mesure de l'évolution des événements,\n- Garantir une gestion rapide et attentive des besoins générés par les \n  événements des clients.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Afficher et actualiser les informations relatives aux événements attribués,\n- Afficher les informations du client relatives aux événements attribués,\n- Actualiser les informations sur l'événement jusqu'à ce qu'il soit terminé.",
+		"name": "Projet P12",
+		"description": "Ce CRM permet aux utilisateurs de l'entreprise Epicevents de créer et mettre à jour une base de données clients, de créer, mettre à jour des contrats et des événements.\n\nLa documentation décrit les différents points de terminaison de cette API.\n\nL'API est accessible à n'importe quel utilisateur mais pour accéder à une ressource, l'utilisateur doit être authentifié et avoir un token de connexion, celui-ci dans être renseigné dans le Headers avec la clé Authorization et le mot-clé Token.\n\nLes utilisateurs des équipes de vente et de support présentent des besoins et des exigences très divers en ce qui concerne les données auxquelles ils auront besoin d'accéder pour s'acquitter de leurs tâches. Nous avons créé plusieurs profils d'utilisateur présentant les besoins des membres de chacune des équipes internes dans le système CRM.\n\nMembres de l'équipe de gestion\nLeurs objectifs :\n- Veiller à ce que l'ensemble des clients et des événements soient pris en \n  charge par une personne,\n- Ajouter de nouveaux utilisateurs au système CRM et leur attribuer des\n  autorisations.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Créer, mettre à jour et supprimer des utilisateurs dans le système CRM,\n- Afficher et modifier toutes les données dans le système CRM.\n\nMembres de l'équipe de vente\nLeurs objectifs :\n- Trouver des clients potentiels pour l'entreprise,\n- Convaincre les clients potentiels de signer avec l'entreprise un contrat \n  relatif à l'organisation d'un événement,\n- Effectuer le suivi des clients existants pour savoir s'ils ont un autre \n  événement en vue.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Ajouter de nouveaux clients dans le système CRM à mesure qu'ils obtiennent\n  des prospects,\n- Actualiser les informations du client pour garantir leur exactitude,\n- Créer un contrat pour un nouvel événement potentiel,\n- Indiquer qu'un contrat ouvert est signé,\n- Créer un nouvel événement pour un contrat.\n\nMembres de l'équipe de support\nLeurs objectifs :\n- Servir de point de contact pour le client lors d'un événement à venir,\n- Faire le lien​ avec les clients existants une fois désignés comme responsable \n  de la gestion de leur événement,\n- Actualiser les informations au fur et à mesure de l'évolution des événements,\n- Garantir une gestion rapide et attentive des besoins générés par les \n  événements des clients.\n\nLes tâches quotidiennes durant lesquelles ils utiliseront le système CRM :\n- Afficher et actualiser les informations relatives aux événements attribués,\n- Afficher les informations du client relatives aux événements attribués,\n- Actualiser les informations sur l'événement jusqu'à ce qu'il soit terminé.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Authentification",
-			"item": [
-				{
-					"name": "authentification",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "username",
-									"value": "kevin",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "Password2022",
-									"type": "text"
-								}
-							]
+			"name": "authentification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "kevin",
+							"type": "text"
 						},
-						"url": {
-							"raw": "http://localhost:8000/login",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"login"
-							]
+						{
+							"key": "password",
+							"value": "Password2022",
+							"type": "text"
 						}
-					},
-					"response": []
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
 				}
-			]
+			},
+			"response": []
 		},
 		{
-			"name": "Clients",
-			"item": [
-				{
-					"name": "liste client",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								""
-							]
-						}
-					},
-					"response": []
+			"name": "liste client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
 				},
-				{
-					"name": "détail client",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "filter client",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/?lastname=Dumont",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								""
-							],
-							"query": [
-								{
-									"key": "lastname",
-									"value": "Dumont"
-								}
-							]
-						},
-						"description": "La filtre client se fait sur 2 champs :\n\nfirstname,\nlastname"
-					},
-					"response": []
-				},
-				{
-					"name": "search client",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client?search=Dumont",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client"
-							],
-							"query": [
-								{
-									"key": "search",
-									"value": "Dumont"
-								}
-							]
-						},
-						"description": "La recherche se fait sur plusieurs champs :\n- firstname,\n- lastname,\n- companyname\n- email"
-					},
-					"response": []
-				},
-				{
-					"name": "delete client",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/4/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"4",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update client",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"id\": 3,\n        \"firstname\": \"Henri\",\n        \"lastname\": \"Dumont\",\n        \"email\": \"henri2@gmail.com\",\n        \"phone\": \"(742) 689-3045, press 33\",\n        \"mobile\": \"(742) 689-3045, press 33\",\n        \"companyname\": \"Paryrus en folie\",\n        \"datecreated\": \"2022-06-13T10:58:51.631026+02:00\",\n        \"dateupdated\": \"2022-06-13T10:58:51.631044+02:00\",\n        \"clientstatus\": true,\n        \"salescontact\": 2\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/4/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"4",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update statut client",
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"clientstatus\": true\n\n        \n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "create client",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "    {\n    \"firstname\": \"Denis\",\n    \"lastname\": \"Potance\",\n    \"email\": \"Denis@gmail.com\",\n    \"phone\": \"(742) 689-3045, press 66\",\n    \"mobile\": \"(742) 689-3045, press 33\",\n    \"companyname\": \"C'est pas ca\"\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								""
-							]
-						}
-					},
-					"response": []
+				"url": {
+					"raw": "http://localhost:8000/client/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						""
+					]
 				}
-			]
+			},
+			"response": []
 		},
 		{
-			"name": "Contrats",
-			"item": [
-				{
-					"name": "liste contrat",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat"
-							]
-						}
-					},
-					"response": []
+			"name": "détail client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
 				},
-				{
-					"name": "detail contrat",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "filter contrat",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/4/contrat?contratstatus=true",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"4",
-								"contrat"
-							],
-							"query": [
-								{
-									"key": "contratstatus",
-									"value": "true"
-								}
-							]
-						},
-						"description": "Un seul filtre est disponible :\n\n- contratstatus"
-					},
-					"response": []
-				},
-				{
-					"name": "search contrat",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/4/contrat?search=Dumont",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"4",
-								"contrat"
-							],
-							"query": [
-								{
-									"key": "search",
-									"value": "Dumont"
-								}
-							]
-						},
-						"description": "La recherche se fait sur plusieurs champs :\n\n- firstname,\n- lastname,\n- email"
-					},
-					"response": []
-				},
-				{
-					"name": "upate contrat",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"amount\": 25,\n    \"paymentdue\": \"2022-06-13T10:52:55.054788+02:00\",\n    \"salescontact\": 2\n     }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/4/contrat/4/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"4",
-								"contrat",
-								"4",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update statut contrat",
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"contratstatus\": true\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "create contrat",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n    \"contratstatus\": true,\n    \"amount\": 25.0\n}\n    ",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "delete contrat",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/3/contrat/4/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"3",
-								"contrat",
-								"4",
-								""
-							]
-						}
-					},
-					"response": []
+				"url": {
+					"raw": "http://localhost:8000/client/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6"
+					]
 				}
-			]
+			},
+			"response": []
 		},
 		{
-			"name": "Events",
-			"item": [
-				{
-					"name": "liste event",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								""
-							]
+			"name": "filter client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/?lastname=Massias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						""
+					],
+					"query": [
+						{
+							"key": "lastname",
+							"value": "Massias"
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "detail event",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								"16",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "search event",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event?search=Massias",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event"
-							],
-							"query": [
-								{
-									"key": "search",
-									"value": "Massias"
-								}
-							]
-						},
-						"description": "La recherche se fait sur plusieurs champs :\n\n- firstname,\n- lastname,"
-					},
-					"response": []
-				},
-				{
-					"name": "upate event",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"attendees\": 8888,\n    \"notes\": \"Tout est très très bon\",\n    \"supportcontact\": 5\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								"16",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "filter event",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/1/contrat?search=Roger",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"1",
-								"contrat"
-							],
-							"query": [
-								{
-									"key": "search",
-									"value": "Roger"
-								}
-							]
-						},
-						"description": "Le filtre se fait sur le champs eventstatus (statut de l'événement) : true or false"
-					},
-					"response": []
-				},
-				{
-					"name": "update statut event",
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"eventstatus\": true\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								"16",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "create event",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n    \"attendees\": 150,\n    \"notes\": \"Test\",\n    \"supportcontact\": 5\n}\n    ",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "delete event",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": []
-						},
-						"url": {
-							"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"client",
-								"6",
-								"contrat",
-								"9",
-								"event",
-								"16",
-								""
-							]
-						}
-					},
-					"response": []
+					]
 				}
-			]
+			},
+			"response": []
+		},
+		{
+			"name": "search client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client?search=M",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/client?search=Bernard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"client"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Bernard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 3,\n        \"firstname\": \"Henri\",\n        \"lastname\": \"Dumont\",\n        \"email\": \"henri2@gmail.com\",\n        \"phone\": \"(742) 689-3045, press 33\",\n        \"mobile\": \"(742) 689-3045, press 33\",\n        \"companyname\": \"Paryrus en folie\",\n        \"datecreated\": \"2022-06-13T10:58:51.631026+02:00\",\n        \"dateupdated\": \"2022-06-13T10:58:51.631044+02:00\",\n        \"clientstatus\": true,\n        \"salescontact\": 2\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update statut client",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"clientstatus\": true\n\n        \n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n    \"firstname\": \"Denis\",\n    \"lastname\": \"Potance\",\n    \"email\": \"Denis@gmail.com\",\n    \"phone\": \"(742) 689-3045, press 66\",\n    \"mobile\": \"(742) 689-3045, press 33\",\n    \"companyname\": \"C'est pas ca\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liste contrat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail contrat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search contrat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/1/contrat?search=Roger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"1",
+						"contrat"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Roger"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upate contrat",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 25,\n    \"paymentdue\": \"2022-06-13T10:52:55.054788+02:00\",\n    \"salescontact\": 2\n     }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/4/contrat/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"4",
+						"contrat",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update statut contrat",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"contratstatus\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create contrat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"contratstatus\": true,\n    \"amount\": 25.0\n}\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete contrat",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/3/contrat/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"3",
+						"contrat",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liste event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upate event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"attendees\": 8888,\n    \"notes\": \"Tout est très très bon\",\n    \"supportcontact\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update statut event",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"eventstatus\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"attendees\": 150,\n    \"notes\": \"Test\",\n    \"supportcontact\": 5\n}\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete event",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token    2e1a16ae0cfbefd7318ffd2bc7354b6653cb1f54",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/6/contrat/9/event/16/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"6",
+						"contrat",
+						"9",
+						"event",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
